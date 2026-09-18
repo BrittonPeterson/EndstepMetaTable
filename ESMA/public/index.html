@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESMA — Endstep matchup table</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <p class="eyebrow">Local prototype</p>
+        <h1>Endstep matchup table</h1>
+        <p class="sub" id="status">Loading snapshot…</p>
+      </div>
+      <div class="actions">
+        <button id="refresh" type="button">Refresh now</button>
+      </div>
+    </header>
+
+    <nav id="formats" class="formats" aria-label="Formats"></nav>
+
+    <section class="legend">
+      <span>Lower win rate</span>
+      <div class="swatch" aria-hidden="true"></div>
+      <span>Higher win rate</span>
+      <p class="hint">
+        Cells are the row deck’s match win rate against the column deck.
+        Hover a cell for wins, losses, and sample size.
+      </p>
+    </section>
+
+    <div id="table-wrap" class="table-wrap">
+      <p class="empty">No data loaded yet.</p>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

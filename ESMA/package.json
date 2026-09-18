@@ -1,0 +1,11 @@
+{
+  "name": "esma",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Endstep metagame matchup table",
+  "scripts": {
+    "start": "node server.js",
+    "scrape": "py -3 scrape.py",
+    "scrape:http": "py -3 scrape.py --backend http"
+  }
+}
